@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Item</title>
+</head>
+<body>
+    <h1>Edit Item</h1>
+    <form method="POST" action="{{ url_for('edit', item_id=item['id']) }}">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ item['name'] }}"><br>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" value="{{ item['price'] }}"><br>
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>

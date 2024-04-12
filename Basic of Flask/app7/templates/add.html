@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Item</title>
+</head>
+<body>
+    <h1>Add Item</h1>
+    <form method="POST" action="{{ url_for('add') }}">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price"><br>
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>
